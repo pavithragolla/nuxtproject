@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Alltodos",
+    "path": "/Alltodos",
+    "component": "C:\\\\Users\\\\Nspira\\\\Desktop\\\\fullnuxt\\\\nuxtinf\\\\pages\\\\Alltodos.vue",
+    "chunkName": "pages/Alltodos"
+  },
+  {
+    "name": "Login",
+    "path": "/Login",
+    "component": "C:\\\\Users\\\\Nspira\\\\Desktop\\\\fullnuxt\\\\nuxtinf\\\\pages\\\\Login.vue",
+    "chunkName": "pages/Login"
+  },
+  {
+    "name": "Todos",
+    "path": "/Todos",
+    "component": "C:\\\\Users\\\\Nspira\\\\Desktop\\\\fullnuxt\\\\nuxtinf\\\\pages\\\\Todos.vue",
+    "chunkName": "pages/Todos"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Nspira\\\\Desktop\\\\fullnuxt\\\\nuxtinf\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
