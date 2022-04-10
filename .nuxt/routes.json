@@ -3,24 +3,35 @@
     "name": "Alltodos",
     "path": "/Alltodos",
     "component": "C:\\\\Users\\\\Nspira\\\\Desktop\\\\fullnuxt\\\\nuxtinf\\\\pages\\\\Alltodos.vue",
-    "chunkName": "pages/Alltodos"
+    "chunkName": "pages/Alltodos",
+    "_name": "_edd5d720"
   },
   {
     "name": "Login",
     "path": "/Login",
     "component": "C:\\\\Users\\\\Nspira\\\\Desktop\\\\fullnuxt\\\\nuxtinf\\\\pages\\\\Login.vue",
-    "chunkName": "pages/Login"
+    "chunkName": "pages/Login",
+    "_name": "_b43c0dd6"
   },
   {
     "name": "Todos",
     "path": "/Todos",
     "component": "C:\\\\Users\\\\Nspira\\\\Desktop\\\\fullnuxt\\\\nuxtinf\\\\pages\\\\Todos.vue",
-    "chunkName": "pages/Todos"
+    "chunkName": "pages/Todos",
+    "_name": "_98536ece"
+  },
+  {
+    "name": "UpdateTodo",
+    "path": "/UpdateTodo",
+    "component": "C:\\\\Users\\\\Nspira\\\\Desktop\\\\fullnuxt\\\\nuxtinf\\\\pages\\\\UpdateTodo.vue",
+    "chunkName": "pages/UpdateTodo",
+    "_name": "_cc0d969a"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Nspira\\\\Desktop\\\\fullnuxt\\\\nuxtinf\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_64c8361e"
   }
 ]

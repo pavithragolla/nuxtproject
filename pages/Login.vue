@@ -18,7 +18,8 @@
 </template>
 
 <script>
-
+// import axios from 'axios'
+// import {mapState,mapActions,mapMutations } from 'vuex'
 import Navbar from '../components/Navbar.vue'
     export default {
 

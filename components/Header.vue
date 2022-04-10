@@ -1,9 +1,12 @@
 <template>
  <div>
+
+
    <div class="topnav">
 
   <nuxt-link to="/Todos">Home</nuxt-link>
   <nuxt-link to="/Alltodos">getAllTodos</nuxt-link>
+  <nuxt-link to="/">Logout</nuxt-link>
   <!-- <a href="#about">About</a> -->
 </div>
 

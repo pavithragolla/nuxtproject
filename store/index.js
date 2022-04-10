@@ -65,9 +65,10 @@ const actions = {
     })
 
     },
-    async update({commit }, id) {
+    async Update({commit }, data) {
 
-        await this.$axios.put('http://localhost:5214/api/todos/' + id,{ description : true
+        await this.$axios.put('http://localhost:5214/api/todos/' + data.id,{ title: data.title,
+        description : data.description
         },{
             headers: {
                 'Authorization': 'Bearer ' + this.state.token,
@@ -75,7 +76,7 @@ const actions = {
     }).then(res => {
         console.log(res.data);
         console.log(res);
-        console.log("called");
+        console.log("Updated");
 
     })
 

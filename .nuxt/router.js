@@ -7,6 +7,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _edd5d720 = () => interopDefault(import('..\\pages\\Alltodos.vue' /* webpackChunkName: "pages/Alltodos" */))
 const _b43c0dd6 = () => interopDefault(import('..\\pages\\Login.vue' /* webpackChunkName: "pages/Login" */))
 const _98536ece = () => interopDefault(import('..\\pages\\Todos.vue' /* webpackChunkName: "pages/Todos" */))
+const _cc0d969a = () => interopDefault(import('..\\pages\\UpdateTodo.vue' /* webpackChunkName: "pages/UpdateTodo" */))
 const _64c8361e = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -32,6 +33,10 @@ export const routerOptions = {
     path: "/Todos",
     component: _98536ece,
     name: "Todos"
+  }, {
+    path: "/UpdateTodo",
+    component: _cc0d969a,
+    name: "UpdateTodo"
   }, {
     path: "/",
     component: _64c8361e,

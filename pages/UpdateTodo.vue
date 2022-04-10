@@ -3,7 +3,7 @@
     <Header />
 
     <div id="myDIV" class="header">
-      <form @submit.prevent="createTodo">
+      <form @submit.prevent="UpdateTodo">
         <div class="container">
           <label for="title"><b>Title</b></label>
           <input
@@ -21,29 +21,10 @@
             required
           />
 
-          <button type="submit">Create</button>
+          <button type="submit">Update</button>
         </div>
       </form>
     </div>
-
-    <h2>MyTodos</h2>
-    <tr>
-      <th>Todo Id</th>
-      <th>Todo Title</th>
-      <th>Todo Description</th>
-      <th>Todo Update</th>
-      <th>Todo Delete</th>
-    </tr>
-    <tr  v-for="(task, i) in $store.state.mytodos" :key="i">
-      <td>{{ task.id }}</td>
-      <td>{{ task.title }}</td>
-      <td>{{ task.description }}</td>
-      <td><button><nuxt-link
-                :to="{ name: 'UpdateTodo', params: { id: task.id } }"
-                >Update</nuxt-link
-              ></button></td>
-      <td><button @click="deletetodo(task.id)">Delete</button></td>
-      </tr>
   </div>
 </template>
 
@@ -59,27 +40,17 @@ export default {
       formData: {
         title: '',
         description: '',
+        id: this.$route.params.id,
       },
     }
   },
 
-  async mounted() {
-    await this.$store.dispatch('myTodos')
-  },
   methods: {
-    async createTodo() {
-      console.log(this.formData)
-      await this.$store.dispatch('createTodo', this.formData)
-    },
-    async deletetodo(id) {
-      await this.$store.dispatch('deleteTodo', id)
-      await this.$store.dispatch('myTodos', id)
 
-
-    },
-    async Update(id) {
-        await this.$store.dispatch('Update',id)
-        await this.$store.dispatch('myTodos', id)
+    async UpdateTodo() {
+        await this.$store.dispatch('Update',this.formData)
+        await this.$store.dispatch('myTodos')
+        this.$router.push("/Todos");
     }
   },
 }
@@ -132,8 +103,5 @@ span.psw {
     display: block;
     float: none;
   }
-}
-table, th, td {
-  border: 1px solid black;
 }
 </style>
